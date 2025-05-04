@@ -1,0 +1,117 @@
+/* === Container & Layout === */
+.quiz-container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #1e1e2f;
+  color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Progress Bar === */
+.progress-bar {
+  height: 12px;
+  background-color: #33364d;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease-in-out;
+}
+
+/* === Question Text === */
+.question {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+}
+
+/* === Options === */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.option-btn {
+  padding: 14px 20px;
+  border: 1px solid #55576a;
+  background: #2c2f40;
+  color: #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-btn:hover {
+  background: #3b3e56;
+  border-color: #666980;
+}
+
+.option-btn.selected {
+  background: #0072ff;
+  border-color: #00c6ff;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 8px #00c6ff;
+}
+
+/* === Navigation Buttons === */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2c2f40;
+  color: #ddd;
+  transition: background 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #3b3e56;
+}
+
+.nav-btn.primary {
+  background: #0072ff;
+  color: white;
+}
+
+.nav-btn.primary:hover {
+  background: #005bd1;
+}
+
+.nav-btn.submit {
+  background: #00c851;
+  color: white;
+}
+
+.nav-btn.submit:hover {
+  background: #00953a;
+}
+
+/* === Completion Message === */
+.quiz-container h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+
+.quiz-container p {
+  font-size: 18px;
+  color: #ccc;
+}
