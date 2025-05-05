@@ -1,74 +1,81 @@
-<<<<<<< HEAD
-# Neuromatch
-=======
-# Getting Started with Create React App
+# 🧠 NeuroMatch — Personality-Based Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NeuroMatch is an AI-assisted full-stack web application designed to help users discover personalized career paths, growth-focused book recommendations, and receive motivational guidance — all based on their unique personality type.
 
-## Available Scripts
+Whether you're feeling lost in your journey or just curious about how your personality maps to opportunities, **NeuroMatch** is your intelligent self-discovery assistant.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔍 What It Does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔐 Analyzes your personality through a 20-question MBTI-style quiz.
+- 🎯 Recommends careers that suit your personality profile.
+- 📚 Suggests curated self-improvement books tailored to your core traits.
+- 💬 Includes a motivational therapy chatbot that speaks to your personality style.
+- 🧠 Designed for clarity, simplicity, and purpose — no fluff.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧰 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Layer        | Technology                              |
+|--------------|------------------------------------------|
+| **Frontend** | React.js, HTML5, CSS3, JavaScript        |
+| **Backend**  | Firebase (Realtime DB, Hosting)          |
+| **Logic**    | LangChain-based scripted responses       |
+| **Tools**    | Git, Vite, Netlify/Vercel (optional)     |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ✅ **20-Question Personality Quiz**  
+  Interactive MBTI-style quiz with a live progress bar and clean UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 📊 **Real-Time Personality Analysis**  
+  Instant evaluation of answers and generation of MBTI personality types.
 
-### `npm run eject`
+- 💼 **Career Recommendations**  
+  Based on your personality, the app offers role suggestions in tech, business, creativity, and more.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 📖 **Book Recommendations**  
+  Curated list of self-growth and mindset books matching personality traits.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 🧘 **Therapy Chatbot**  
+  Personality-based chatbot that gives motivational, cognitive behavioral-style advice using scripted logic.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 🧾 **Firebase Integration**  
+  Secure storage of quiz results and recommendation mappings using Firebase Realtime DB.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🖼️ Screenshots (Coming Soon)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Add screenshots of quiz page, results page, chatbot conversation, etc.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧩 App Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 9d8255b (Neuromatch Code Pushed)
+```plaintext
+📦 NeuroMatch/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Quiz.jsx
+│   │   ├── ProgressBar.jsx
+│   │   ├── ResultPage.jsx
+│   │   ├── BookRecommendations.jsx
+│   │   ├── CareerRecommendations.jsx
+│   │   └── Chatbot.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Dashboard.jsx
+│   ├── utils/
+│   │   ├── mbtiLogic.js
+│   │   ├── recommendationMap.js
+│   ├── App.js
+│   └── index.js
+├── firebaseConfig.js
+├── package.json
+└── README.md
