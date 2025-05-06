@@ -1,5 +1,8 @@
 # 🧠 NeuroMatch — Personality-Based Recommendation System
 
+## 🔗 Live Demo
+🌐 [View NeuroMatch Here](https://neuromatch.vercel.app/)
+
 NeuroMatch is an AI-assisted full-stack web application designed to help users discover personalized career paths, growth-focused book recommendations, and receive motivational guidance — all based on their unique personality type.
 
 Whether you're feeling lost in your journey or just curious about how your personality maps to opportunities, **NeuroMatch** is your intelligent self-discovery assistant.
