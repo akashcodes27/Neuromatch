@@ -4,6 +4,8 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db, auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
+const openaikey = process.env.REACT_APP_OPENAI_API_KEY 
+
 const questionData = [
   { id: 1, question: "I enjoy spending time alone and often prefer it over social gatherings." },
   { id: 2, question: "I make decisions based on logic rather than emotions." },
@@ -70,7 +72,7 @@ const PersonalityQuiz = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${openaikey}`,
         },
         body: JSON.stringify({
           model: "gpt-3.5-turbo",
@@ -95,7 +97,7 @@ const PersonalityQuiz = () => {
       method: "POST",
       headers:{
         "Content-Type": "application/json",
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${openaikey}`,
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",

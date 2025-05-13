@@ -10,6 +10,7 @@ import ProtectedRoute from "./Components/ProtectedRoutes";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
 import { useState, useEffect } from 'react';
+import Books from './Components/Books';
 // import "@fontsource/poppins";
 
 
@@ -35,6 +36,7 @@ useEffect(() => {
         <Route path="/" element={<LandingPage />} /> 
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />  
+        <Route path="/books" element = {<Books/>}/>
 
 
 
