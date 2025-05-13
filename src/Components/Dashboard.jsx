@@ -47,8 +47,10 @@ const Dashboard = () => {
       {/* 🧭 Top Nav */}
       <header className="top-navbar">
         <Link to="/dashboard" className="nav-link">Dashboard</Link>
-        <Link to="/careers" className="nav-link">Careers</Link>
+        {/* <Link to="/careers" className="nav-link">Careers</Link> */}
         <Link to="/books" className="nav-link">Books</Link>
+        <Link to="/therapy" className="nav-link">Therapy</Link>  
+
       </header>
 
       <div className="dashboard-layout">
