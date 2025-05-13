@@ -4,6 +4,9 @@ import { auth, db } from "../firebase";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import "../styles/Dashboard.css";
+import { signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+
 
 
 const Dashboard = () => {
@@ -42,14 +45,36 @@ const Dashboard = () => {
     fetchUserResults();
   }, []);
 
+
+
+
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/"); // redirect to LandingPage
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
+
+
+
+
+
+
   return (
     <div className="dashboard-wrapper">
       {/* 🧭 Top Nav */}
       <header className="top-navbar">
-        <Link to="/dashboard" className="nav-link">Dashboard</Link>
-        {/* <Link to="/careers" className="nav-link">Careers</Link> */}
-        <Link to="/books" className="nav-link">Books</Link>
-        <Link to="/therapy" className="nav-link">Therapy</Link>  
+        <div className="nav-left">
+          <Link to="/dashboard" className="nav-link">Dashboard</Link>
+
+          <Link to="/books" className="nav-link">Books</Link>
+          <Link to="/therapy" className="nav-link">Therapy</Link>
+        </div>
+        <button className="logout-btn" onClick={handleLogout}>Logout</button>
 
       </header>
 
@@ -65,9 +90,8 @@ const Dashboard = () => {
               {results.map((res, index) => (
                 <li
                   key={res.id}
-                  className={`session-item ${
-                    selectedResult?.id === res.id ? "active" : ""
-                  }`}
+                  className={`session-item ${selectedResult?.id === res.id ? "active" : ""
+                    }`}
                   onClick={() => setSelectedResult(res)}
                 >
                   🧠 Quiz {results.length - index} <br />
