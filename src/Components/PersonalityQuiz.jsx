@@ -148,7 +148,7 @@ const PersonalityQuiz = () => {
             {option}
           </button>
         ))}
-      </div>
+      </div>   
 
       <div className="navigation">
         {currentQuestion > 0 && (
